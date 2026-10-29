@@ -166,9 +166,10 @@ function ProjectCard({ project }) {
 }
 
 function App() {
-  const [isLight, setIsLight] = useState(
-    () => localStorage.getItem("madhanPortfolioTheme") === "light"
-  );
+  
+
+  const [isLight, setIsLight] = useState(true);
+
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
   const [scrolled, setScrolled] = useState(false);
@@ -176,8 +177,14 @@ function App() {
 
   useEffect(() => {
     document.body.classList.toggle("light", isLight);
-    localStorage.setItem("madhanPortfolioTheme", isLight ? "light" : "dark");
+
+    localStorage.setItem(
+      "madhanPortfolioTheme",
+      isLight ? "light" : "dark"
+    );
   }, [isLight]);
+
+
 
   useEffect(() => {
     const handleScroll = () => {
