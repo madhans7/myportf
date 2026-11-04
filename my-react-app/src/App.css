@@ -1170,3 +1170,228 @@ iframe {
     font-size: 0.72rem;
   }
 }
+
+/* =========================================
+   HERO SECTION - EDGE SPACING FIX
+========================================= */
+
+.hero {
+  width: 100%;
+  padding: 120px 0 80px;
+}
+
+/* Main container */
+.hero .container {
+  width: calc(100% - 80px);
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Left and right content spacing */
+.hero-grid {
+  width: 100%;
+  grid-template-columns:
+    minmax(0, 1.1fr)
+    minmax(0, 0.9fr);
+
+  gap: clamp(40px, 5vw, 90px);
+
+  align-items: center;
+}
+
+/* Prevent content touching the edges */
+.hero-grid > * {
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* Heading */
+.hero h1 {
+  max-width: 100%;
+  font-size: clamp(3rem, 5.2vw, 6rem);
+  line-height: 1.05;
+  overflow-wrap: anywhere;
+}
+
+/* Profile card */
+.profile-card {
+  width: min(420px, 100%);
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+/* =========================================
+   LARGE DESKTOP
+========================================= */
+
+@media (min-width: 1500px) {
+  .hero .container {
+    width: calc(100% - 120px);
+  }
+
+  .hero-grid {
+    gap: 90px;
+  }
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 920px) {
+  .hero .container {
+    width: calc(100% - 48px);
+  }
+
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 40px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 620px) {
+  .hero {
+    padding: 105px 0 50px;
+  }
+
+  .hero .container {
+    width: calc(100% - 32px);
+  }
+
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.2rem, 9.5vw, 3.5rem);
+    line-height: 1.08;
+  }
+
+  .profile-card {
+    width: 100%;
+    transform: none;
+  }
+}
+
+/* =========================================
+   LARGE SCREEN - COMPACT HERO DESIGN
+========================================= */
+
+@media (min-width: 1200px) {
+
+  /* Main hero container */
+  .hero .container {
+    max-width: 1240px;
+    width: calc(100% - 100px);
+  }
+
+  /* Hero layout */
+  .hero-grid {
+    grid-template-columns:
+      minmax(0, 1.05fr)
+      minmax(0, 0.85fr);
+
+    gap: 55px;
+  }
+
+  /* Main heading */
+  .hero h1 {
+    font-size: clamp(3.5rem, 4.2vw, 5.2rem);
+    line-height: 1.02;
+    letter-spacing: -0.055em;
+
+    margin-bottom: 22px;
+  }
+
+  /* Availability badge */
+  .availability {
+    font-size: 0.9rem;
+    padding: 9px 15px;
+
+    margin-bottom: 20px;
+  }
+
+  /* Description */
+  .hero-copy {
+    font-size: 1rem;
+    line-height: 1.7;
+
+    max-width: 600px;
+
+    margin-bottom: 26px;
+  }
+
+  /* Buttons */
+  .hero-actions {
+    gap: 12px;
+    margin-bottom: 25px;
+  }
+
+  .hero-actions .btn {
+    font-size: 0.95rem;
+
+    padding: 14px 22px;
+
+    min-height: 50px;
+  }
+
+  /* Profile card */
+  .hero-visual {
+    min-height: 400px;
+  }
+
+  .profile-card {
+    width: min(360px, 100%);
+
+    min-height: 400px;
+
+    padding: 25px;
+  }
+
+  /* Profile logo */
+  .profile-card .avatar,
+  .profile-card .profile-avatar {
+    width: 105px;
+    height: 105px;
+  }
+
+  /* Profile name */
+  .profile-card h2 {
+    font-size: 1.8rem;
+  }
+
+  /* Profile description */
+  .profile-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}
+
+/* =========================================
+   EXTRA LARGE SCREENS
+========================================= */
+
+@media (min-width: 1600px) {
+
+  .hero .container {
+    max-width: 1320px;
+  }
+
+  .hero-grid {
+    gap: 70px;
+  }
+
+  .hero h1 {
+    font-size: 5.2rem;
+  }
+
+  .profile-card {
+    width: 380px;
+  }
+}
