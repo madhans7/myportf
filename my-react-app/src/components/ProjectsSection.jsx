@@ -7,7 +7,7 @@ const projectItems = [
     description:
       "Dynamic job listing application with authentication, search, filtering, protected routing, and responsive React UI.",
     points: [
-      "(username: rahul, password: rahul@123)",
+      "(username: rahul, password: rahul@2021) for demo login.",
       "Built Login, Home, Jobs Listing, Job Details, and Logout experiences.",
       "Implemented JWT authentication and protected routes.",
       "Added filtering by job type, salary range, and employment criteria.",
