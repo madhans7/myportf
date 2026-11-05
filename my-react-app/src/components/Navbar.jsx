@@ -1,3 +1,5 @@
+import profileImage from "../assets/image.png";
+
 const navItems = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
@@ -12,7 +14,7 @@ export default function Navbar({ light, setLight, menuOpen, setMenuOpen }) {
     <header className="navbar" id="navbar">
       <div className="container nav-inner">
         <a href="#home" className="logo" aria-label="Madhan portfolio home">
-          <span className="logo-badge">M</span>
+          <img src={profileImage} alt="Madhan S." className="logo-badge" />
           <span>Madhan S.</span>
         </a>
 

@@ -1,3 +1,5 @@
+import profileImage from "../assets/image.png";
+
 export default function HeroSection() {
   return (
     <section className="hero" id="home">
@@ -46,7 +48,7 @@ export default function HeroSection() {
               <span></span>
               <span></span>
             </div>
-            <div className="avatar">MS</div>
+            <img src={profileImage} alt="Madhan S." className="avatar" />
             <h3>Madhan S</h3>
             <div className="profile-role">Full Stack • Cloud • Software Development</div>
 

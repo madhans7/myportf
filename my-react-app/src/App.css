@@ -160,16 +160,13 @@ h2 {
   align-items: center;
   gap: 10px;
 }
-
 .logo-badge {
   width: 35px;
   height: 35px;
   border-radius: 11px;
-  background: linear-gradient(135deg, var(--primary), var(--primary-2));
-  display: grid;
-  place-items: center;
-  color: white;
-  box-shadow: 0 8px 25px rgba(124,92,255,.28);
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
 }
 
 .nav-links {
