@@ -1,4 +1,5 @@
 import profileImage from "../assets/image.png";
+import { MapPin, Mail, Phone } from "lucide-react";
 
 export default function HeroSection() {
   return (
@@ -23,18 +24,29 @@ export default function HeroSection() {
             <a className="btn btn-primary" href="#projects">
               View Projects <span>↗</span>
             </a>
-            <a className="btn btn-secondary" href="mailto:sm0294806@gmail.com">
-              Contact Me <span>→</span>
+            <a className="btn btn-secondary" href="https://github.com/madhans7" target="_blank" rel="noopener noreferrer">
+              GitHub
             </a>
             <a className="btn btn-secondary" href="https://linkedin.com/in/madhan-s-a7b3a9286" target="_blank" rel="noopener">
               LinkedIn
             </a>
           </div>
 
-          <div className="quick-info">
-            <span>⌖ Bangalore, Karnataka</span>
-            <span>✉ sm0294806@gmail.com</span>
-            <span>☎ 8754092379</span>
+          <div className="contact-info">
+          <span>
+              <MapPin size={16} />
+              Bangalore, Karnataka
+          </span>
+
+          <span>
+              <Mail size={16} />
+              sm0294806@gmail.com
+          </span>
+
+          <span>
+          <Phone size={16} />
+             +91 8754092379
+            </span>
           </div>
         </div>
 

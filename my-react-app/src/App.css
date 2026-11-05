@@ -1392,3 +1392,21 @@ iframe {
     width: 380px;
   }
 }
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-info span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.contact-info svg {
+  color: #2563eb;
+  flex-shrink: 0;
+}
